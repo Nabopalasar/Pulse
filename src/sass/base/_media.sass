@@ -2,6 +2,12 @@
 @media (max-width: 991px)
     .container
         max-width: 730px
+    .carousel .next
+        display: none
+    .carousel .prev
+        display: none
+    .catalog__content 
+        justify-content: space-around
 
 // -576px
 @media (max-width: 767px)
@@ -51,6 +57,10 @@
         &__descr
             font-size: 18px
             line-height: 27px
+    .carousel .tns-item img
+        width: 500px
+    
+    
         
 
 // -320px
@@ -106,3 +116,17 @@
         &__descr
             font-size: 15px
             line-height: 23px
+    .carousel .tns-item img
+        width: 250px
+    .catalog__tabs
+        flex-direction: column
+    .reviews    
+        .review 
+            img
+                display: none
+        .review__head img
+            display: block
+    
+
+
+

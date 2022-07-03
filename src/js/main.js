@@ -17,13 +17,22 @@
 //   });
   
 
+
 const slider = tns({
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
     autoplay: false,
     controls: false,
-    nav: false
+    nav: false,
+    responsive: {
+      991: {
+        autoplay: false
+      },
+      320: {
+        autoplay: true
+      }
+    }
   });
 
   document.querySelector('.prev').addEventListener('click', function () {
@@ -93,3 +102,4 @@ tabsText.forEach(item => {
     }
   });
 });
+const spopBtn = document.querySelector('button[data-action]').style.display = 'none';
