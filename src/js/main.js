@@ -102,4 +102,5 @@ tabsText.forEach(item => {
     }
   });
 });
+//hide slider sptop button
 const spopBtn = document.querySelector('button[data-action]').style.display = 'none';
