@@ -104,3 +104,22 @@ tabsText.forEach(item => {
 });
 //hide slider sptop button
 const spopBtn = document.querySelector('button[data-action]').style.display = 'none';
+
+//MODAL
+document.querySelectorAll('[data-modal=consultation]').forEach(item => 
+  item.addEventListener("click", function() {
+    document.querySelector('.overlay').style.display = 'block';
+    document.querySelector('#consultation').style.display = 'block';
+  }));
+
+document.querySelectorAll('.button_mini').forEach(item => item.addEventListener('click', function() {
+  document.querySelector('.overlay').style.display = 'block';
+  document.querySelector('#order').style.display = 'block';
+}));
+
+document.querySelectorAll('.modal__close').forEach(item => item.addEventListener('click', function() {
+  document.querySelector('.overlay').style.display = 'none';
+  document.querySelector('#consultation').style.display = 'none';
+  document.querySelector('#thanks').style.display = 'none';
+  document.querySelector('#order').style.display = 'none';
+}));
